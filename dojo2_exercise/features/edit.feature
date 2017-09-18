@@ -11,7 +11,7 @@ Contexto:
 	Dado que acesse o site
 	E logue no sistema
 
-Cenario: Cadastrar Task
+Cenario: Editar Task
 	Dado esteja na tela de Create Task
 	Quando acessar a tela de visualização da task
   E clicar no botao de editar

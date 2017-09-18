@@ -1,6 +1,6 @@
 class AllTasksPage < SitePrism::Page
 
-  element :edit_task_button, "#edit-100d74bd-f2b3-fede-236e-596cef1a9696"
+  element :edit_task_button, :xpath, '//*[@id="edit-63f2c964-4eea-40cc-9fd3-59b05cc67cab"]'
   element :checkbox_task_one, :xpath, "(//td/input[@type='checkbox'])[1]"
   element :select_options, "#selectLinkTop"
   element :deselecte_all_tasks, "#button_deselect_top"
@@ -51,9 +51,7 @@ class AllTasksPage < SitePrism::Page
     filter_button.click
     advanced_filter.click
     subject_field.set(search_subject)
-
     my_itens_checkbox.click
     advanced_search_button.click
   end
-
 end

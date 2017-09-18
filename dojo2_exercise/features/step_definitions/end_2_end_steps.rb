@@ -56,4 +56,5 @@ end
 
 Entao(/^não deve aparecer a task$/) do
   assert_text('No results found... Perhaps change your search criteria and try again?')
+  AllTasksPage.new.unfilter.click
 end

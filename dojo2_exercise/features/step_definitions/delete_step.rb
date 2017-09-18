@@ -24,4 +24,5 @@ end
 Entao(/^não deve aparecer a mesma task$/) do
   AllTasksPage.new.advanced_search_task_by_contact(@search_subject, @search_contact)
   assert_text('No results found... Perhaps change your search criteria and try again?')
+  AllTasksPage.new.unfilter.click
 end
