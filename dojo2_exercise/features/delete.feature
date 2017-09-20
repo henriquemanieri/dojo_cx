@@ -7,14 +7,13 @@ Funcionalidade: Deletar Task
 	Quero deletar uma task que ja existe
 	Para poder limpar
 
-Contexto:
+Contexto: Login
 	Dado que acesse o site
 	E logue no sistema
+	E que acesse a tela de Create Task
+	E abrir a tela de visualização da task
 
 Cenario: Deletar Task
-	Dado que acesse a tela de Create Task
-	Quando abrir a tela de visualização da task
-  E clicar na caixa para marcar a task que foi criada
-  E clicar no Bulk Action para deletar
-  E confirmar o delete no box
+	Dado que apareça todas as tasks em lista
+  Quando deletar a primeira task da lista
   Entao não deve aparecer a mesma task

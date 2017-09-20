@@ -1,22 +1,11 @@
-Dado(/^que acesse a tela de Create Task$/) do
-  HomePage.new.click_button_task
-end
-
-Quando(/^abrir a tela de visualização da task$/) do
-  TaskPage.new.view_task_button.click
-end
-
-Quando(/^clicar na caixa para marcar a task que foi criada$/) do
-  AllTasksPage.new.checkbox_task_one.click
+Dado(/^que apareça todas as tasks em lista$/) do
   @search_subject = AllTasksPage.new.get_subject
   @search_contact = AllTasksPage.new.get_contact
 end
 
-Quando(/^clicar no Bulk Action para deletar$/) do
+Quando(/^deletar a primeira task da lista$/) do
+  AllTasksPage.new.checkbox_task_one.click
   AllTasksPage.new.delete_selected_tasks
-end
-
-Quando(/^confirmar o delete no box$/) do
   sleep 3
   AllTasksPage.new.accept_javascript_pop_up
 end

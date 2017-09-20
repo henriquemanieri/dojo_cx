@@ -1,6 +1,6 @@
 class AllTasksPage < SitePrism::Page
 
-  element :edit_task_button, :xpath, '//*[@id="edit-63f2c964-4eea-40cc-9fd3-59b05cc67cab"]'
+  element :edit_task_button, :xpath, "(//a[@class='edit-link'])[1]"
   element :checkbox_task_one, :xpath, "(//td/input[@type='checkbox'])[1]"
   element :select_options, "#selectLinkTop"
   element :deselecte_all_tasks, "#button_deselect_top"

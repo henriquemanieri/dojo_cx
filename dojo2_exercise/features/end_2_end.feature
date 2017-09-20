@@ -15,16 +15,7 @@ Contexto:
 
 Cenario: Fluxo end-2-end
 Dado que eu entre na tela de criação de tasks
-Quando preencher o formulario de criação da task
-E salvar-lo
-E abrir tela de visualização da task
-E pesquisar task para editar
-E clicar no botao para editar
-E editar os campos desejados
-E salvar a task editada
-E abrir a tela com todas as tasks
-E pesquisar a task que foi editada
-E clicar na checkbox para marcar a task editada
+Quando criar uma nova task
+E editar a task
 E deletar a task
-E confirmar o delete
 Entao não deve aparecer a task

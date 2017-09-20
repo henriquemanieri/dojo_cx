@@ -7,14 +7,13 @@ Funcionalidade: Editar Task
 	Quero editar uma task que ja existe
 	Para atualizar as informações da task
 
-Contexto:
+Contexto: Login
 	Dado que acesse o site
 	E logue no sistema
+	E que acesse a tela de Create Task
+	E abrir a tela de visualização da task
 
 Cenario: Editar Task
-	Dado esteja na tela de Create Task
-	Quando acessar a tela de visualização da task
-  E clicar no botao de editar
-  E editar o campo desejado
-  E salvar a task
+	Dado que vizualize todas as tasks
+	Quando editar a primeira task da lista
 	Entao o campo solicitado tem que estar alterado
