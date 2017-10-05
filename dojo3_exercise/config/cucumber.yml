@@ -1,0 +1,5 @@
+default: --no-source --color --format pretty
+
+e2e: -t @End2end -f html -o html_report.html
+
+regression: -t @Register,@Edit,@Delete - html -o html_report.html

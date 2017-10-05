@@ -6,6 +6,7 @@ require 'rake'
 require 'capybara/cucumber'
 require 'pry'
 require 'site_prism'
+require 'httparty'
 
 Capybara.register_driver :selenium do |app|
                 Capybara::Selenium::Driver.new(app, :browser => :chrome)
